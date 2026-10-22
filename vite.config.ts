@@ -19,10 +19,7 @@ export default defineConfig({
     viteReact(),
     tailwindcss(),
     nitro({
-      preset: "cloudflare-module",
-      cloudflare: {
-        nodeCompat: true,
-      },
+      preset: "netlify",
     }),
   ],
 });
